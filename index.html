@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0; padding: 0; box-sizing: border-box;
+        }
+
+        main{
+            width: 80%;
+            height: 100vh;
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        } 
+
+        div{
+            width: 30%; height: auto;
+            margin: auto;
+            border: 1px solid black;
+        }   
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+
+    </style >
+</head> 
+<body>
+
+<main>
+    <div>
+        <a onclick="playsong()" ondblclick="pausesong()">
+            <img src="img/bankaccount.jpg">
+        </a>
+    </div>
+</main>   
+
+<script>
+
+  var mysong = new Audio();
+  mysong.src = 'msc/21 Savage - Bank Account (Official Audio).mp3';
+
+  const playsong = () =>{
+      mysong.play();
+  }
+
+  const pausesong = () =>{
+      mysong.pause();
+  }
+
+
+</script>
+
+</body>
+</html>
